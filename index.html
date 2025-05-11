@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sơ đồ hệ thống</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .btn {
+      display: block;
+      color: white;
+      padding: 0.75rem 1rem;
+      border-radius: 0.5rem;
+      text-align: center;
+      font-weight: 600;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .highlight-title {
+      position: relative;
+      display: inline-block;
+    }
+
+    .highlight-title::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(to right, #f59e0b, #ef4444, #10b981);
+      bottom: -6px;
+      left: 0;
+      animation: pulseLine 2s infinite;
+    }
+
+    @keyframes pulseLine {
+      0%, 100% {
+        opacity: 1;
+        transform: scaleX(1);
+      }
+      50% {
+        opacity: 0.5;
+        transform: scaleX(0.8);
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <div class="max-w-3xl mx-auto p-6">
+    <h1 class="text-3xl font-bold text-center mb-2 highlight-title">DANH SÁCH BIỂU ĐỒ PHÂN TÍCH THIẾT KẾ</h1>
+    <h2 class="text-xl font-semibold text-center mb-4 highlight-title">Hệ thống gợi ý mặt hàng kinh doanh dựa vào AI</h2>
+    <p class="text-center text-gray-700 mb-6 font-medium highlight-title">Tên sinh viên: Nguyễn Hoàng Vũ (22D116005)</p>
+
+    <div class="grid grid-cols-1 gap-4">
+      <a href="https://tinyurl.com/2e56e32f" target="_blank" class="btn bg-blue-500">Sơ đồ chức năng</a>
+      <a href="https://tinyurl.com/52bewx6k" target="_blank" class="btn bg-green-500">Use Case Diagram (Sơ đồ ca sử dụng)</a>
+      <a href="https://tinyurl.com/5n5adp7u" target="_blank" class="btn bg-purple-500">Sequence Diagram (Sơ đồ tuần tự)</a>
+      <a href="https://tinyurl.com/4uamj6pe" target="_blank" class="btn bg-pink-500">Sơ đồ cấu trúc - Mô hình dữ liệu</a>
+      <a href="https://tinyurl.com/c9rkss6e" target="_blank" class="btn bg-yellow-500">Sơ đồ ngữ cảnh hệ thống</a>
+      <a href="https://tinyurl.com/42smwjam" target="_blank" class="btn bg-red-500">Sơ đồ máy trạng thái</a>
+      <a href="https://tinyurl.com/mtr9jxas" target="_blank" class="btn bg-teal-500">Danh sách tác nhân nghiệp vụ hệ thống</a>
+      <a href="https://tinyurl.com/5fzetxuc" target="_blank" class="btn bg-indigo-500">ERD (Sơ đồ thực thể quan hệ)</a>
+    </div>
+  </div>
+</body>
+</html>
